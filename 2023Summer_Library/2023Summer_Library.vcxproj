@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="BookRegister.cpp" />
     <ClCompile Include="LibraryManager.cpp" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BookRegister.h" />

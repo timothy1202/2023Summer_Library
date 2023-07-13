@@ -3,11 +3,11 @@
 
 void BookRegister::RegisterABook()
 {
-	/*char* Name1=0;
+	char* Name1=0;
 	std::cout << "책의 정보를 입력해주세요!\n";
 	std::cout << "책 이름 : ";
-	std::cin >> Name1;*/
-	//BookRegister::Name=Name1;
+	std::cin >> Name1;
+	BookRegister::Name=Name1;
 	//std::cout << "저자 이름 : ";
 	//std::cin >> Author1;
 	//Author = Author1;
