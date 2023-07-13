@@ -1,21 +1,44 @@
 #include"LibraryManager.h"
 
 LibraryManager Test;
+BookRegister book;
 
 int main()
 {
-    BookRegister book;
-    Test.BookTest[0] = { "tim" };
-    Test.BookTest[1] = { "B" };
-    Test.BookTest[2] = { "C" };
-    int Inst = Test.NumberOfBooks;
-    Test.SearchTheBook(Inst);
+    int SelectService = 0;
+
+    //테스트용 디폴트 값
+    {
+    Test.BookTest.push_back("test1");
+    Test.BookTest.push_back("test2");
+    Test.BookTest.push_back("test3");
+    Test.BookAuthor.push_back("Author1");
+    Test.BookAuthor.push_back("Author2");
+    Test.BookAuthor.push_back("Author3");
+    Test.BookPublisher.push_back("Publisher1");
+    Test.BookPublisher.push_back("Publisher2");
+    Test.BookPublisher.push_back("Publisher3");
+    }
+
 
     std::cout << "호서대학교 도서관에 들어오신 것을 환영합니다\n";
     std::cout << "무엇을 도와드릴까요??\n";
-    std::cout << "1. 책 등록하기\n2. 책 검색하기\n3. 책 예약하기\n4. 책 대여하기\n5. 책 반납하기\n6. 열람실\n7. 체험 프로그램\n8. 도서관에 대해서\n\n";
-    book.RegisterABook();
-    std::cout << book.Name;
+    std::cout << "1. 책 등록하기\n2. 책 검색하기\n3. 책 대여하기\n4. 책 반납하기\n5. 열람실\n6. 체험 프로그램\n7. 도서관에 대해서\n\n";
+    std::cin >> SelectService;
+    switch (SelectService)
+    {
+        case 1:
+            book.RegisterABook(); 
+            Test.BookTest.push_back(book.Name);
+            break;
+        case 2:
+            Test.SearchTheBook(Test.BookTest.size());
+            break;
+        //case3:
+
+
+    }
+    std::cout << Test.BookTest[3];
 
     return 0;
 }

@@ -6,10 +6,8 @@ class BookRegister
 {
 
 public:
-	char* Name;
-	char* Author;
-	char* publisher;
-	int PageNumber;
-	char* BookNumber;
+	std::string Name="";
+	std::string Author="";
+	std::string publisher="";
 	void RegisterABook();
 };
