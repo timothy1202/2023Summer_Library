@@ -17,7 +17,7 @@ void BookRegister::RegisterABook()
 	std::string publisher1 = "";
 	std::cout << "ÃâÆÇ»ç : ";
 	std::cin >> publisher1;
-	BookRegister::publisher = publisher1;
+	BookRegister::Publisher = publisher1;
 
 
 }

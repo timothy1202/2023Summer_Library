@@ -8,6 +8,6 @@ class BookRegister
 public:
 	std::string Name="";
 	std::string Author="";
-	std::string publisher="";
+	std::string Publisher="";
 	void RegisterABook();
 };
