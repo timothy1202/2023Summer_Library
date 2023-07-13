@@ -9,5 +9,6 @@ public:
 	std::string Name="";
 	std::string Author="";
 	std::string Publisher="";
+	bool Rentable = 1;
 	void RegisterABook();
 };

@@ -16,7 +16,9 @@ public:
     void SearchTheBook(int num); // 책 검색 함수
 
     //책 대여 코드
-    std::vector<int> RentOk;
+    std::vector<bool> RentOk; //대여 가능한 책인지 확인하는 배열
+    void RentTheBook(int num);//책 대여 함수
+    void ReturnTheBook(int num);
 
 
 };

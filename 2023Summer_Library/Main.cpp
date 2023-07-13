@@ -19,6 +19,9 @@ int main()
     Test.BookPublisher.push_back("Publisher1");
     Test.BookPublisher.push_back("Publisher2");
     Test.BookPublisher.push_back("Publisher3");
+    Test.RentOk.push_back(1);
+    Test.RentOk.push_back(1);
+    Test.RentOk.push_back(1);
     }
 
     while(1)
@@ -34,11 +37,17 @@ int main()
                 Test.BookTest.push_back(book.Name);
                 Test.BookAuthor.push_back(book.Author);
                 Test.BookPublisher.push_back(book.Publisher);
+                Test.RentOk.push_back(book.Rentable);
                 break;
             case 2:
                 Test.SearchTheBook(Test.BookTest.size());
                 break;
-                //case3:
+            case 3:
+                Test.RentTheBook(Test.BookTest.size());
+                break;
+            case 4:
+                Test.ReturnTheBook(Test.BookTest.size());
+
         }
         std::cout << "프로그램을 종료하시겠습니까? \n";
         std::wcout << "(종료: 0 / 재실행: 1)\n";
